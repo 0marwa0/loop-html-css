@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="./hearo.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./land-page-main.css" />
+    <link rel="stylesheet" href="./commitment.css" />
+    <link rel="stylesheet" href="./location.css" />
+    <link rel="stylesheet" href="./loop-packages.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:ital,wght@0,100;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mui/material@5.11.0/dist/umd/material-icons.css"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="fragment" content="!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="script.js"></script>
+
+    <style>
+      #customRange {
+        position: relative;
+      }
+
+      #sliderTooltip {
+        position: absolute;
+        top: -30px; /* Adjust as needed */
+        left: 0;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hearo-area">
+      <div class="container-layout">
+        <div class="d-flex justify-content-between gap-2 navbar-v2">
+          <img src="./assets/icons/logo.svg" alt="Logo" class="logo-icon" />
+          <div class="d-flex gap-2 align-items-center">
+            <div class="text-18 pointer" id="menuButton">MENU</div>
+            <img
+              src="./assets/icons/menu.svg"
+              alt="Menu"
+              class="pointer"
+              id="menuButton"
+            />
+          </div>
+        </div>
+
+        <div id="popup" class="popup">
+          <div class="popup_inner container-layout">
+            <a href=""> Home</a>
+            <a href=""> The Loop Yacht</a>
+            <a href=""> Meet The Crew</a>
+            <a href=""> Locate Loop in Dubai</a>
+            <button class="nav-btn">BOOK NOW</button>
+          </div>
+        </div>
+        <div class="hearo-text">
+          LUXURY YACHTING IN DUBAI & ABU Dhabi WITH LOOP.
+        </div>
+        <button class="hearo-btn">
+          EXPLORE OUR PACKAGES
+          <img src="./assets/icons/arrow-btn.svg" class="arrow-icon-lg" />
+        </button>
+      </div>
+    </div>
+
+    <!--Booking Section -->
+
+    <div className="popup-booking-bg">
+      <div class="container-layout">
+        <div class="hearo-booking">
+          <div class="booking-head">
+            <div>
+              <div
+                class="d-flex date-input flex-column justify-content-start align-items-start"
+              >
+                <input type="radio" id="day" name="radio-group" />
+                <label for="day" class="date-title">FULL DAY</label>
+                <div class="date-price">Starts From 9.999 AED / day</div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex date-input flex-column justify-content-start align-items-start"
+              >
+                <input type="radio" id="week" name="radio-group" />
+                <label for="week" class="date-title">FULL WEEK</label>
+                <div class="date-price">Starts From 8,999 per day</div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex date-input flex-column justify-content-start align-items-start"
+              >
+                <input type="radio" id="month" name="radio-group" />
+                <label for="month" class="date-title">FULL MONTH</label>
+                <div class="date-price">Starts From 7,999 AED per day</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-values">
+            <section class="booking-value-padding">
+              <div class="date-text">Start Date</div>
+              <div>
+                <input type="date" class="date-input" />
+
+                <img src="./assets/icons/datePicker-icon.svg" />
+              </div>
+            </section>
+            <section class="booking-value-padding">
+              <div class="date-text">End Date</div>
+              <div>
+                <input type="date" class="date-input" />
+                <img src="./assets/icons/datePicker-icon.svg" />
+              </div>
+            </section>
+            <section>
+              <div class="dropdown no-styles">
+                <button
+                  class="btn btn-secondary dropdown-toggle dropdwon-style"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="font-18">Passengers</div>
+                  <div
+                    class="gray-color text-padding font-18 d-flex justify-content-between font-20"
+                  >
+                    <div class="value-text">0 Passengers</div>
+
+                    <img
+                      src="./assets/images/dropdown-icon.svg"
+                      alt="Dropdown Icon"
+                      class="drop-down-icon"
+                    />
+                  </div>
+                </button>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item no-styles" href="#">
+                      <div class="container mt-5">
+                        <input
+                          type="range"
+                          class="form-range"
+                          id="customRange"
+                          min="0"
+                          max="100"
+                          value="50"
+                          data-toggle="tooltip"
+                          title="50"
+                        />
+                        <div id="sliderTooltip" class="tooltip" role="tooltip">
+                          <div class="tooltip-inner">999ß</div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <button class="text-white green-bg book-btn" id="bookNowButton">
+              <div>BOOK NOW</div>
+              <img
+                src="./assets/icons/arrow-btn.svg"
+                alt="Arrow Icon"
+                class="arrow-icon-lg"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Booking Section End -->
+    <!-- Commitment Section Start -->
+
+    <div class="commitment-section">
+      <!-- Compass -->
+      <div class="compass-container">
+        <img
+          id="compassIcon"
+          class="image-container compass-icon compass up"
+          src="./assets/icons/compass.svg"
+          alt="Compass Icon"
+        />
+      </div>
+      <!-- Text -->
+      <div class="commitment-container">
+        <img
+          id="shipIcon"
+          class="ship-icon"
+          src="./assets/icons/ship-icon.svg"
+          alt="Ship Icon"
+        />
+        <div>
+          <div class="commitment-title">OUR COMMITMENT</div>
+          <div>
+            Our commitment is to provide you with a
+            <strong>yacht experience</strong> that transcends the ordinary.
+          </div>
+        </div>
+      </div>
+      <!-- Yacht -->
+      <div id="yachtIcon" class="image-container yacht-side-icon up">
+        <div class="Yacht-space"></div>
+        <img
+          src="./assets/images/Yacht-booking-section.png"
+          alt="Yacht Image"
+        />
+      </div>
+    </div>
+
+    <!-- Commitment Section End -->
+
+    <!-- Location Section Start -->
+
+    <div class="location-section">
+      <div class="container-layout">
+        <section
+          id="primeLocationSection"
+          class="primeLocation-move d-flex gap-4 location-content up"
+        >
+          <div class="play-icon-container">
+            <img
+              id="playIcon"
+              class="play-icon"
+              src="./assets/icons/play-icon.svg"
+              alt="Play Icon"
+            />
+          </div>
+          <div>
+            <div class="section-title">PRIME LOCATIONS</div>
+            <div class="section-text white-color">
+              <span className="font-wight-500">Dubai</span> And
+              <span className="font-wight-500"> Abu Dhabi</span>
+
+              offer some of the world's most iconic and breathtaking maritime
+              landscapes.
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Location Section Start -->
+    <!-- Packages Section Start -->
+
+    <div class="loop-packages">
+      <div class="container-layout">
+        <div class="loop-packages-content">
+          <div class="loop-packages-title">loop packages</div>
+          <div class="loop-packages-text">
+            Embark on a luxurious maritime escape with LOOP's curated yacht
+            <span class="font-wight-500"> packages</span> in
+            <span class="font-wight-500">Dubai</span> and
+            <span class="font-wight-500">Abu Dhabi</span>.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-layout">
+      <div class="packages-cards-container">
+        <div id="dayCard" class="package-card day-card day-card-move up">
+          <div>
+            <div class="card-title">FULL DAY</div>
+            <div class="card-text">Starts From 9.999 AED / day</div>
+          </div>
+          <button
+            class="loop-packages-btn btn pramary-btn text-white dark_bg white-border"
+          >
+            BOOK NOW
+            <img src="arrow-btn.svg" alt="" class="arrow-icon-ms" />
+          </button>
+        </div>
+        <div id="weekCard" class="package-card week-card week-card-move up">
+          <div>
+            <div class="card-title">FULL WEEK</div>
+            <div class="card-text">Starts From 8,999 AED / week</div>
+          </div>
+          <button
+            class="loop-packages-btn btn pramary-btn text-white dark_bg white-border"
+          >
+            BOOK NOW
+            <img src="arrow-btn.svg" alt="" class="arrow-icon-ms" />
+          </button>
+        </div>
+        <div id="monthCard" class="package-card month-card month-card-move up">
+          <div>
+            <div class="card-title">FULL MONTH</div>
+            <div class="card-text">Starts From 7,999 AED / month</div>
+          </div>
+          <button
+            class="loop-packages-btn btn pramary-btn text-white dark_bg white-border"
+          >
+            BOOK NOW
+            <img src="arrow-btn.svg" alt="" class="arrow-icon-ms" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Packages Section End -->
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.3/dist/js/bootstrap.min.js"></script>
+
+  <script src="./index.js"></script>
+</html>
