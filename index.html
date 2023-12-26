@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="./commitment.css" />
     <link rel="stylesheet" href="./location.css" />
     <link rel="stylesheet" href="./loop-packages.css" />
+    <link rel="stylesheet" href="./feature.css" />
+    <link rel="stylesheet" href="./yacht.css" />
+    <link rel="stylesheet" href="./slider.css" />
+    <link rel="stylesheet" href="./teastimonial.css" />
+    <link rel="stylesheet" href="./explore.css" />
+    <link rel="stylesheet" href="./footer.css" />
 
     <link
       rel="stylesheet"
@@ -71,28 +77,37 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
 
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@mui/material@5.11.0/dist/umd/material-icons.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="fragment" content="!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="script.js"></script>
-
-    <style>
-      #customRange {
-        position: relative;
-      }
-
-      #sliderTooltip {
-        position: absolute;
-        top: -30px; /* Adjust as needed */
-        left: 0;
-        display: none;
-      }
-    </style>
   </head>
   <body>
     <div class="hearo-area">
@@ -262,7 +277,8 @@
           <div class="commitment-title">OUR COMMITMENT</div>
           <div>
             Our commitment is to provide you with a
-            <strong>yacht experience</strong> that transcends the ordinary.
+            <span class="font-wight-500">yacht experience</span> that transcends
+            the ordinary.
           </div>
         </div>
       </div>
@@ -364,6 +380,592 @@
       </div>
     </div>
     <!-- Packages Section End -->
+    <!-- Feature Section Start -->
+    <div class="loop-featuers">
+      <div class="container-layout">
+        <div class="loop-features-title">Why Choose LOOP</div>
+        <div class="loop-features-text d-flex gap-3">
+          LOOP redefines yachting with unmatched services. Discover why
+          travelers choose us.
+        </div>
+        <div>
+          <button
+            class="btn pramary-btn justify-content-center green-bg align-items-center text-white loop-features-btn"
+          >
+            BOOK LOOP NOW
+            <img
+              src="./assets/icons/arrow-btn.svg"
+              alt=""
+              class="arrow-icon-sm"
+            />
+          </button>
+        </div>
+      </div>
+      <img
+        src="./assets/images/loop-featuers.png"
+        alt=""
+        class="bg-loop-feature"
+      />
+      <div class="features-container container-layout feature-move">
+        <!-- Feature cards will be dynamically added here using JavaScript -->
+      </div>
+    </div>
+    <!-- Feature Section End -->
+    <!-- Yacht Section Start -->
+
+    <div class="princessYacht-container">
+      <div class="container-layout">
+        <div class="Yacht-layout">
+          <div class="Yacht-title">
+            <div>
+              <img
+                src="assets/icons/arrow-down-light.svg"
+                alt="Arrow Down"
+                class="Yacht-icon"
+              />
+            </div>
+            <div class="Yacht-text">Our Yacht</div>
+            <div class="Yacht-name">Princess F56 FLY</div>
+          </div>
+          <div class="Yacht-relative">
+            <div class="Yacht-absolute">
+              <section class="Yacht-doc">
+                Meet the PRINCESS F56 FLY – the pinnacle of sea luxury. With
+                sleek design and top-notch amenities, this yacht offers an
+                unparalleled experience in opulence. Elevate your journey on the
+                seas with the epitome of yachting sophistication.
+              </section>
+              <div class="Yacht-img-container">
+                <img
+                  src="./assets/images/princessYacht.png"
+                  alt="Princess Yacht"
+                  class="Yacht-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Yacht Section End -->
+    <!-- Slider Section Start -->
+    <div>
+      <div class="container-layout">
+        <div class="slide-button-container">
+          <button id="prev" class="slide-button">
+            <img src="./assets/icons/icon-long-arrow-left.svg" alt="Previous" />
+          </button>
+          <button id="next" class="slide-button">
+            <img src="./assets/icons/icon-long-arrow-right.svg" alt="Next" />
+          </button>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img
+            src="./assets/slideImage/slide1.png"
+            alt="Yacht image"
+            class="slide-item"
+          />
+        </div>
+
+        <div class="item">
+          <img
+            src="./assets/slideImage/slide1.png"
+            alt="Yacht image"
+            class="slide-item"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./assets/slideImage/slide1.png"
+            alt="Yacht image"
+            class="slide-item"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./assets/slideImage/slide1.png"
+            alt="Yacht image"
+            class="slide-item"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Slider Section End -->
+    <!-- Teastimonial Section Start -->
+
+    <div class="testimonal-container">
+      <div class="text-center testimonals">Testimonials</div>
+      <div class="text-center">
+        <div class="testimonal-head">
+          The satisfaction of our clients is at the heart of everything we do
+        </div>
+      </div>
+      <div class="testimonal-cards">
+        <!-- TestimonialCard instances -1- start -->
+
+        <div class="hide_card">
+          <section id="card1-move" class="testimonal-card card-move">
+            <div>
+              <div class="d-flex align-items-center gap15">
+                <img
+                  class="testimonal-user-img"
+                  src="./assets/images/testimonal-user.png"
+                  alt=""
+                />
+                <div class="d-flex flex-column">
+                  <div>
+                    <div class="font-18">Jessicc</div>
+                    <div class="testimonal-stars">
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="card-text-testimonial">
+                  Booking with LOOP was the highlight of our celebration! The
+                  PRINCESS F56 FLY yacht surpassed all expectations. The crew's
+                  professionalism and meticulous attention to detail made our
+                  day truly unforgettable.
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TestimonialCard instances -1- end -->
+        <!-- TestimonialCard instances -2- start -->
+
+        <div>
+          <section id="card2-move" class="testimonal-card card-move">
+            <div>
+              <div class="d-flex align-items-center gap15">
+                <img
+                  class="testimonal-user-img"
+                  src="./assets/images/Emilyt.png"
+                  alt=""
+                />
+                <div class="d-flex flex-column">
+                  <div>
+                    <div class="font-18">Emily.T</div>
+                    <div class="testimonal-stars">
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="card-text-testimonial">
+                  Booking with LOOP was the highlight of our celebration! The
+                  PRINCESS F56 FLY yacht surpassed all expectations. The crew's
+                  professionalism and meticulous attention to detail made our
+                  day truly unforgettable.
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TestimonialCard instances -2- end -->
+
+        <!-- TestimonialCard instances -3- start -->
+
+        <div>
+          <section id="card3-move" class="testimonal-card card-move">
+            <div>
+              <div class="d-flex align-items-center gap15">
+                <img
+                  class="testimonal-user-img"
+                  src="./assets/images/markL.png"
+                  alt=""
+                />
+                <div class="d-flex flex-column">
+                  <div>
+                    <div class="font-18">Mark.L</div>
+                    <div class="testimonal-stars">
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="card-text-testimonial">
+                  Booking with LOOP was the highlight of our celebration! The
+                  PRINCESS F56 FLY yacht surpassed all expectations. The crew's
+                  professionalism and meticulous attention to detail made our
+                  day truly unforgettable.
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TestimonialCard instances -3- end -->
+
+        <!-- TestimonialCard instances -4- start -->
+
+        <div>
+          <section id="card4-move" class="testimonal-card card-move">
+            <div>
+              <div class="d-flex align-items-center gap15">
+                <img
+                  class="testimonal-user-img"
+                  src="./assets/images/Emilyt.png"
+                  alt=""
+                />
+                <div class="d-flex flex-column">
+                  <div>
+                    <div class="font-18">Emily.T</div>
+                    <div class="testimonal-stars">
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="card-text-testimonial">
+                  Booking with LOOP was the highlight of our celebration! The
+                  PRINCESS F56 FLY yacht surpassed all expectations. The crew's
+                  professionalism and meticulous attention to detail made our
+                  day truly unforgettable.
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TestimonialCard instances -4- end -->
+
+        <!-- TestimonialCard instances -5- start -->
+
+        <div class="hide_card">
+          <section id="card5-move" class="testimonal-card card-move">
+            <div>
+              <div class="d-flex align-items-center gap15">
+                <img
+                  class="testimonal-user-img"
+                  src="./assets/images/Noor.png"
+                  alt=""
+                />
+                <div class="d-flex flex-column">
+                  <div>
+                    <div class="font-18">Noor</div>
+                    <div class="testimonal-stars">
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="star-icon"
+                        src=" ./assets/icons/star-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="card-text-testimonial">
+                  Booking with LOOP was the highlight of our celebration! The
+                  PRINCESS F56 FLY yacht surpassed all expectations. The crew's
+                  professionalism and meticulous attention to detail made our
+                  day truly unforgettable.
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TestimonialCard instances -5- end -->
+      </div>
+      <div>
+        <button class="text-white dark_bg reviews-btn">
+          VIEW ALL REVIEWS
+          <img
+            src="./assets/icons/arrow-btn.svg"
+            alt=""
+            class="arrow-icon-sm"
+          />
+        </button>
+      </div>
+    </div>
+
+    <!-- Teastimonial Section End -->
+    <!-- Explore Section Start -->
+
+    <div class="overflow-hidden">
+      <div class="explore-boat" id="explore-boats-section-move">
+        <div class="container-layout">
+          <div class="book-loop-title">
+            Explore our exclusive yacht services
+          </div>
+          <div class="book-loop-text">
+            Ready for a new level of sea luxury? Explore our exclusive yacht
+            services and set sail on a tailored journey.
+          </div>
+          <div>
+            <button
+              class="btn pramary-btn justify-content-center align-items-center text-white book-loop-btn"
+            >
+              Book loop now
+              <img
+                src="./assets/icons/arrow-btn.svg"
+                alt=""
+                class="arrow-icon-sm"
+              />
+            </button>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Explore Section End -->
+    <!-- Footer Section Start -->
+
+    <section id="footer">
+      <div class="container-layout">
+        <div class="footer-layout">
+          <div class="footer-icons">
+            <a href="#" class="footer-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#555pxw188a)">
+                  <path
+                    d="M9.332 2.325h1.278V.099C10.39.069 9.63 0 8.748 0 6.905 0 5.643 1.16 5.643 3.29v1.96H3.609v2.489h2.034V14h2.493V7.74h1.951l.31-2.49H8.135V3.537c0-.72.194-1.211 1.197-1.211z"
+                    fill="#CCC"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="555pxw188a">
+                    <path fill="#fff" d="M0 0h14v14H1z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+
+            <a href="#" class="footer-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#vixiabekta)">
+                  <path
+                    d="M12.562 4.15A5.73 5.73 0 0 0 14 2.66c-.52.228-1.075.379-1.654.452a2.855 2.855 0 0 0 1.263-1.586 5.744 5.744 0 0 1-1.82.695 2.87 2.87 0 0 0-4.965 1.962c0 .228.02.446.067.655A8.126 8.126 0 0 1 .975 1.835a2.873 2.873 0 0 0 .882 3.836A2.837 2.837 0 0 1 .56 5.318v.031c0 1.395.995 2.553 2.3 2.82a2.854 2.854 0 0 1-.753.095c-.184 0-.37-.01-.543-.049a2.898 2.898 0 0 0 2.681 2 5.77 5.77 0 0 1-3.558 1.224c-.236 0-.461-.01-.687-.04a8.082 8.082 0 0 0 4.403 1.289c5.065 0 8.366-4.226 8.159-8.539z"
+                    fill="#CCC"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="vixiabekta">
+                    <path fill="blue" d="M0 0h14v14H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#tx66b3ofza)" fill="#CCC">
+                  <path
+                    d="M7.002 3.405a3.592 3.592 0 1 0 0 7.184 3.592 3.592 0 0 0 0-7.184zm0 5.924a2.33 2.33 0 1 1-.001-4.662 2.33 2.33 0 0 1 .001 4.662z"
+                  />
+                  <path
+                    d="M9.886.044c-1.288-.06-4.478-.057-5.767 0C2.986.097 1.987.371 1.18 1.176-.165 2.523.007 4.336.007 6.997c0 2.723-.152 4.495 1.174 5.821 1.352 1.351 3.192 1.175 5.821 1.175 2.698 0 3.629.001 4.582-.368 1.297-.503 2.276-1.662 2.372-3.744.06-1.289.057-4.479 0-5.768C13.84 1.656 12.52.165 9.886.044zm2.039 11.884c-.883.882-2.107.803-4.94.803-2.916 0-4.086.044-4.94-.812-.982-.978-.804-2.55-.804-4.931 0-3.223-.331-5.544 2.903-5.71.744-.026.962-.035 2.833-.035l.026.018c3.109 0 5.548-.326 5.694 2.908.034.738.041.96.041 2.828 0 2.883.054 4.06-.813 4.93z"
+                  />
+                  <path
+                    d="M10.737 4.104a.84.84 0 1 0 0-1.68.84.84 0 0 0 0 1.68z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="tx66b3ofza">
+                    <path fill="#fff" d="M0 0h14v14H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.36 3.393c-.153-.647-.603-1.156-1.174-1.329C11.15 1.75 7 1.75 7 1.75s-4.151 0-5.186.314C1.243 2.237.793 2.746.64 3.393.363 4.565.363 7.01.363 7.01s0 2.445.277 3.617c.153.647.603 1.135 1.174 1.308C2.849 12.25 7 12.25 7 12.25s4.15 0 5.186-.314c.571-.173 1.02-.661 1.174-1.308.277-1.172.277-3.617.277-3.617s0-2.446-.277-3.618zM5.642 9.23v-4.44l3.47 2.22-3.47 2.22z"
+                  fill="#CCC"
+                />
+              </svg>
+            </a>
+            <a href="#" class="footer-item">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#pqcb4yeema)" fill="#CCC">
+                  <path
+                    d="M13.996 14H14V8.864c0-2.512-.54-4.447-3.477-4.447-1.412 0-2.36.775-2.746 1.51h-.04V4.651H4.951V14h2.9V9.371c0-1.219.23-2.397 1.74-2.397 1.486 0 1.508 1.39 1.508 2.475V14h2.896zM.231 4.653h2.903V14H.23V4.653zM1.681 0C.753 0 0 .753 0 1.681s.753 1.697 1.681 1.697 1.681-.769 1.681-1.697S2.61 0 1.682 0z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="pqcb4yeema">
+                    <path fill="#fff" d="M0 0h14v14H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="text-center footer-item">
+            <a href="#">© LOOP 2023</a>
+          </div>
+          <div class="terms-porlicy">
+            <div class="text-center footer-item">
+              <a href="#"> Terms Of Use</a>
+            </div>
+            <div class="text-center footer-item">
+              <a href="#"> Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section End -->
   </body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>

@@ -51,7 +51,8 @@ body {
 }
 a {
   color: unset;
-  text-decoration: none;
+
+  text-decoration: none !important;
 }
 .font-16 {
   font-family: Poppins;
@@ -106,4 +107,48 @@ a {
 .splide__arrow--prev,
 .splide__arrow--next {
   display: none !important;
+}
+
+@media screen and (min-width: 1000px) {
+  /*anmation */
+
+  .card-move {
+    transition: transform 1.9998s ease-out;
+  }
+
+  #card1-move.down {
+    transform: translateY(-50px);
+  }
+
+  #card1-move.up {
+    transform: translateY(50px);
+  }
+  #card2-move.down {
+    transform: translateY(-40px);
+  }
+
+  #card2-move.up {
+    transform: translateY(40px);
+  }
+  #card3-move.down {
+    transform: translateY(-30px);
+  }
+
+  #card3-move.up {
+    transform: translateY(30px);
+  }
+  #card4-move.down {
+    transform: translateY(-20px);
+  }
+
+  #card4-move.up {
+    transform: translateY(20px);
+  }
+  #card5-move.down {
+    transform: translateY(-10px);
+  }
+
+  #card5-move.up {
+    transform: translateY(10px);
+  }
 }
