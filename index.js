@@ -1,4 +1,54 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const range = document.getElementById("range"),
+    passenger_value = document.getElementById("passenger-value"),
+    tooltip = document.getElementById("tooltip"),
+    setValue = () => {
+      const newValue = Number(
+          ((range.value - range.min) * 100) / (range.max - range.min)
+        ),
+        newPosition = 16 - newValue * 0.32;
+      tooltip.innerHTML = `<span>${range.value} Passenger </span>`;
+      passenger_value.textContent = range.value;
+      tooltip.style.left = `calc(${newValue}% + (${newPosition}px))`;
+      document.documentElement.style.setProperty(
+        "--range-progress",
+        `calc(${newValue}% + (${newPosition}px))`
+      );
+    };
+  document.addEventListener("DOMContentLoaded", setValue);
+  range.addEventListener("input", setValue);
+
+  var splide = new Splide("#splide-gallery", {
+    type: "slide",
+    width: "100%",
+    perPage: 5,
+    pagination: false,
+    focus: 0,
+    perMove: 1,
+    // arrows: false,
+    breakpoints: {
+      1000: {
+        perPage: 4,
+      },
+      767: {
+        perPage: 2,
+      },
+      640: {
+        perPage: 1,
+      },
+    },
+    focus: "center",
+    gap: "0.3rem",
+  });
+
+  splide.mount();
+  document.querySelector(".custom-prev").addEventListener("click", function () {
+    splide.go("<"); // Go to the previous slide
+  });
+
+  document.querySelector(".custom-next").addEventListener("click", function () {
+    splide.go(">"); // Go to the next slide
+  });
   const menuButton = document.getElementById("menuButton");
 
   const popup = document.getElementById("popup");
@@ -247,33 +297,5 @@ document.addEventListener("DOMContentLoaded", function () {
   // Cleanup the event listener when the component unmounts
   window.addEventListener("beforeunload", function () {
     window.removeEventListener("scroll", handleScroll);
-  });
-});
-
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    items: 5,
-    loop: true,
-    nav: false,
-    dots: false,
-    responsive: {
-      1000: {
-        items: 4,
-      },
-      767: {
-        items: 2,
-      },
-      640: {
-        items: 1,
-      },
-    },
-  });
-
-  // Manually bind the custom buttons
-  $(".owl-next").click(function () {
-    $(".owl-carousel").trigger("next.owl.carousel");
-  });
-  $(".owl-prev").click(function () {
-    $(".owl-carousel").trigger("prev.owl.carousel");
   });
 });

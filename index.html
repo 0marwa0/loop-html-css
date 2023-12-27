@@ -77,32 +77,10 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@mui/material@5.11.0/dist/umd/material-icons.css"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
-
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="fragment" content="!" />
@@ -146,7 +124,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
     <!--Booking Section -->
 
-    <div className="popup-booking-bg">
+    <div class="popup-booking-bg">
       <div class="container-layout">
         <div class="hearo-booking">
           <div class="booking-head">
@@ -182,17 +160,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="booking-values">
             <section class="booking-value-padding">
               <div class="date-text">Start Date</div>
-              <div>
-                <input type="date" class="date-input" />
+              <div class="datepicker-container">
+                <input
+                  type="date"
+                  class="text-padding-date datepicker-input font-20"
+                />
 
-                <img src="./assets/icons/datePicker-icon.svg" />
+                <!-- <img src="./img/assets/icons/datePicker-icon.svg" />  -->
               </div>
             </section>
             <section class="booking-value-padding">
-              <div class="date-text">End Date</div>
-              <div>
-                <input type="date" class="date-input" />
-                <img src="./assets/icons/datePicker-icon.svg" />
+              <div class="date-text font-18">End Date</div>
+              <div class="datepicker-container text-padding-date">
+                <input
+                  type="date"
+                  class="datepicker-input font-20"
+                  id="datepicker"
+                />
+                <!-- <img src="./img/assets/icons/datePicker-icon.svg" /> -->
               </div>
             </section>
             <section>
@@ -207,7 +192,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <div
                     class="gray-color text-padding font-18 d-flex justify-content-between font-20"
                   >
-                    <div class="value-text">0 Passengers</div>
+                    <div class="value-text">
+                      <span id="passenger-value">0</span> Passengers
+                    </div>
 
                     <img
                       src="./assets/icons/dropdown-icon.svg"
@@ -218,24 +205,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </button>
 
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item no-styles" href="#">
-                      <div class="container mt-5">
-                        <input
-                          type="range"
-                          class="form-range"
-                          id="customRange"
-                          min="0"
-                          max="100"
-                          value="50"
-                          data-toggle="tooltip"
-                          title="50"
-                        />
-                        <div id="sliderTooltip" class="tooltip" role="tooltip">
-                          <div class="tooltip-inner">999ß</div>
-                        </div>
-                      </div>
-                    </a>
+                  <li class="dropdown-item no-styles">
+                    <div class="range-slider">
+                      <div id="tooltip"></div>
+                      <input
+                        id="range"
+                        type="range"
+                        step="1"
+                        value="0"
+                        min="0"
+                        max="10"
+                      />
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -430,7 +411,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <div class="Yacht-title">
             <div>
               <img
-                src="assets/icons/arrow-down-light.svg"
+                src="./assets/icons/arrow-down-light.svg"
                 alt="Arrow Down"
                 class="Yacht-icon"
               />
@@ -460,51 +441,83 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </div>
     <!-- Yacht Section End -->
     <!-- Slider Section Start -->
-    <!-- <div>
+    <div>
       <div class="container-layout">
         <div class="slide-button-container">
-          <button id="prev" class="slide-button">
+          <button id="prev" class="slide-button custom-prev">
             <img src="./assets/icons/icon-long-arrow-left.svg" alt="Previous" />
           </button>
-          <button id="next" class="slide-button">
+          <button id="next" class="slide-button custom-next">
             <img src="./assets/icons/icon-long-arrow-right.svg" alt="Next" />
           </button>
         </div>
       </div>
 
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          item
-          <img
-            src="./assets/slideImage/slide1.png"
-            alt="Yacht image"
-            class="slide-item"
-          />
-        </div>
-
-        <div class="item">
-          <img
-            src="./assets/slideImage/slide1.png"
-            alt="Yacht image"
-            class="slide-item"
-          />
-        </div>
-        <div class="item">
-          <img
-            src="./assets/slideImage/slide1.png"
-            alt="Yacht image"
-            class="slide-item"
-          />
-        </div>
-        <div class="item">
-          <img
-            src="./assets/slideImage/slide1.png"
-            alt="Yacht image"
-            class="slide-item"
-          />
+      <div class="slide-intro-wrap">
+        <div id="splide-gallery" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img
+                  id="card1-move"
+                  class="card-move slide-item"
+                  src="./assets/slideImage/slide3.png"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  id="card2-move"
+                  class="card-move slide-item"
+                  src="./assets/slideImage/slide2.png"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  id="card3-move"
+                  class="card-move slide-item"
+                  src="./assets/slideImage/slide4.png"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  id="card4-move"
+                  class="card-move slide-item"
+                  src="./assets/slideImage/slide4.png"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  id="card5-move"
+                  class="card-move slide-item"
+                  src="./assets/slideImage/slide3.png"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  id="card1-move"
+                  class="card-move slide-item"
+                  src="./assets/slideImage/slide2.png"
+                  alt=""
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="card-move slide-item"
+                  id="card2-move"
+                  src="./assets/slideImage/slide4.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- Slider Section End -->
     <!-- Teastimonial Section Start -->
 
@@ -857,7 +870,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <section id="footer">
       <div class="container-layout">
         <div class="footer-layout">
-          <div class="footer-icons">
+          <div class="footer-icons footer-1fr">
             <a href="#" class="footer-item">
               <svg
                 width="14"
@@ -962,14 +975,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </svg>
             </a>
           </div>
-          <div class="text-center footer-item">
+          <div class="footer-1fr footer-1fr">
             <a href="#">© LOOP 2023</a>
           </div>
-          <div class="terms-porlicy">
-            <div class="text-center footer-item">
+          <div class="terms-policy">
+            <div>
               <a href="#"> Terms Of Use</a>
             </div>
-            <div class="text-center footer-item">
+            <div>
               <a href="#"> Privacy Policy</a>
             </div>
           </div>
@@ -979,9 +992,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
     <!-- Footer Section End -->
   </body>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

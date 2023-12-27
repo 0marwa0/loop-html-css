@@ -164,14 +164,12 @@
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .value-text {
-  height: 26px;
-  flex-grow: 1;
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  /* line-height: 2.8; */
+  line-height: 2.8;
   letter-spacing: normal;
   text-align: left;
   color: #131825;
@@ -233,7 +231,9 @@
 .text-padding {
   padding-bottom: 12px;
 }
-
+.text-padding-date {
+  padding: 18px 0;
+}
 .booking-values {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -402,10 +402,18 @@
   justify-content: space-between;
   align-items: center;
 }
-.date-input {
-  border: none !important;
-  width: auto;
+.datepicker-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
+.datepicker-input,
+.datepicker-input:focus {
+  border: none !important;
+  width: 100% !important;
+  font-size: 20px !important;
+  /* background-color: rebeccapurple; */
+}
+
 .popup {
   position: fixed;
   width: 100%;

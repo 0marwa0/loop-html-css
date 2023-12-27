@@ -153,3 +153,39 @@
     display: none;
   }
 }
+
+.bubble > .triangle {
+  position: relative;
+  top: 40px;
+  left: 16px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #4a8bc2;
+}
+.bubble > .background {
+  width: 50px;
+  height: 30px;
+  background-color: #4a8bc2;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+}
+input {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid grey;
+  margin-right: 30px;
+  font-size: 15px;
+  width: 70px;
+}
+.q3 {
+  display: inline-block;
+  width: 300px;
+  vertical-aligtn: middle;
+}
+.ui-slider-handle {
+  outline: none;
+  cursor: all-scroll;
+}
