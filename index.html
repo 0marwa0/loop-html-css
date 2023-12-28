@@ -81,6 +81,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="fragment" content="!" />
@@ -157,55 +162,55 @@
             </div>
           </div>
 
-          <div class="booking-values">
-            <section class="booking-value-padding">
+          <div class="booking-values border-b">
+            <section class="section-padding">
               <div class="date-text">Start Date</div>
               <div class="datepicker-container">
                 <input
-                  type="date"
-                  class="text-padding-date datepicker-input font-20"
+                  type="text"
+                  placeholder="27 March 2023"
+                  class="flatpickr-input form-control"
+                  id="exampleDate"
                 />
 
-                <!-- <img src="./img/assets/icons/datePicker-icon.svg" />  -->
+                <img src="./assets/icons/datePicker-icon.svg" />
               </div>
             </section>
-            <section class="booking-value-padding">
-              <div class="date-text font-18">End Date</div>
-              <div class="datepicker-container text-padding-date">
+            <section class="section-padding">
+              <div class="date-text">End Date</div>
+              <div class="datepicker-container">
                 <input
-                  type="date"
-                  class="datepicker-input font-20"
-                  id="datepicker"
+                  type="text"
+                  placeholder="27 March 2023"
+                  class="flatpickr-input form-control"
+                  id="exampleDate"
                 />
-                <!-- <img src="./img/assets/icons/datePicker-icon.svg" /> -->
+
+                <img src="./assets/icons/datePicker-icon.svg" />
               </div>
             </section>
-            <section>
-              <div class="dropdown no-styles">
+            <section class="section-padding span-2 width-100">
+              <div class="dropdown">
                 <button
-                  class="btn btn-secondary dropdown-toggle dropdwon-style"
+                  class="btn dropdown-toggle width-100"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <div class="font-18">Passengers</div>
-                  <div
-                    class="gray-color text-padding font-18 d-flex justify-content-between font-20"
-                  >
-                    <div class="value-text">
+                  <div class="date-text">Passengers</div>
+                  <div class="gray-color d-flex justify-content-between">
+                    <div class="text-value">
                       <span id="passenger-value">0</span> Passengers
                     </div>
-
                     <img
                       src="./assets/icons/dropdown-icon.svg"
                       alt="Dropdown Icon"
-                      class="drop-down-icon"
                     />
                   </div>
                 </button>
 
                 <ul class="dropdown-menu">
-                  <li class="dropdown-item no-styles">
+                  <li class="dropdown-item">
                     <div class="range-slider">
                       <div id="tooltip"></div>
                       <input
@@ -281,7 +286,7 @@
       <div class="container-layout">
         <section
           id="primeLocationSection"
-          class="primeLocation-move d-flex gap-4 location-content up"
+          class="primeLocation-move d-flex location-content up"
         >
           <div class="play-icon-container">
             <img

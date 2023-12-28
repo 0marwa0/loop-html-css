@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
+  flatpickr("#exampleDate", {
+    dateFormat: "d F Y", // Day, full month name, year
+  });
   const range = document.getElementById("range"),
     passenger_value = document.getElementById("passenger-value"),
     tooltip = document.getElementById("tooltip"),

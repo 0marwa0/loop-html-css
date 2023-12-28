@@ -6,8 +6,53 @@
   --dark-color: #131825;
   --grean: #38983c;
 }
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:active:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.btn {
+  background-color: white;
+}
+.width-100 {
+  width: 100%;
+}
 .container-layout {
   padding: 0 142px;
+}
+.form-control {
+  padding: 0 !important;
+}
+.custom-theme {
+  /* Add your custom styles here */
+  background-color: #e0e0e0;
+}
+.section-padding {
+  padding: 24px 23px 22px 24px;
+}
+/* Customize the active and selected day */
+#booking-date .is-today,
+#booking-date .is-selected {
+  background-color: #3498db; /* Active and selected day background color */
+  color: #fff; /* Active and selected day text color */
+}
+input[type="text"]:focus,
+input[type="text"]:focus-visible,
+input[type="text"]:not(:disabled):not(.disabled) {
+  box-shadow: none;
+  outline: none !important;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2.8;
+  text-align: left;
+  color: #131825;
+  border: none !important;
 }
 
 .arrow-icon-lg {

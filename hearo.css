@@ -85,7 +85,16 @@
   width: 124px;
   height: 34px;
 }
+.text-value {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  height: 100%;
+  line-height: 2;
 
+  text-align: left;
+  color: #131825;
+}
 .navbar-v2 {
   padding-top: 40px;
 }
@@ -170,6 +179,7 @@
   font-stretch: normal;
   font-style: normal;
   line-height: 2.8;
+  /* background-color: #603898; */
   letter-spacing: normal;
   text-align: left;
   color: #131825;
@@ -202,11 +212,17 @@
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: all 0.3s ease;
 }
+.border-b {
+  border-bottom: solid 1px #eaeaea;
+}
 .dropdwon-style {
   color: inherit !important;
   background-color: transparent !important;
+  margin: 0 !important;
+
   border: none !important;
-  padding: 24px 22px 22px 24px !important;
+  padding: 0 !important;
+  /* padding: 24px 22px 22px 24px !important; */
   width: 100% !important;
   font-size: inherit !important;
   line-height: inherit !important;
@@ -223,9 +239,11 @@
 }
 .booking-values section {
   color: #131825;
-  margin: 1px 0 1px 1px;
+
   border: solid 1px #eaeaea;
   border-right: none;
+  border-bottom: none;
+  border-top: none;
   width: 100%;
 }
 .text-padding {
@@ -239,6 +257,7 @@
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-columns: repeat(4, 284px); */
   place-items: center;
+  row-gap: 20px;
   /* grid-template-columns: repeat(4, auto); */
   background-color: white;
 }
@@ -255,14 +274,17 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.m-t-2 {
+  margin-top: 2px;
+}
 .date-text {
-  height: 32px;
+  /* height: 32px; */
   font-family: Poppins !important;
   font-size: 16px !important;
   font-weight: 500 !important;
   line-height: 2;
   text-align: left;
+
   color: #131825;
 }
 @media screen and (max-width: 1040px) {
@@ -309,6 +331,9 @@
 
     width: 100% !important;
   }
+  .span-2 {
+    grid-column: span 2;
+  }
   .booking-values {
     /* grid-template-columns: repeat(4, auto); */
 
@@ -320,7 +345,9 @@
   /* .hearo-booking {
       margin-top: -50px;
     } */
-
+  .span-2 {
+    grid-column: unset;
+  }
   .hearo-text {
     /* font-size: 1.8rem; */
     height: auto;
@@ -405,13 +432,16 @@
 .datepicker-container {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-items: center;
 }
 .datepicker-input,
 .datepicker-input:focus {
   border: none !important;
   width: 100% !important;
+
   font-size: 20px !important;
-  /* background-color: rebeccapurple; */
+
+  background-color: yellow;
 }
 
 .popup {
@@ -474,6 +504,7 @@
 .popup_inner div {
   margin: 2% 0;
 }
+
 .dropdown-menu {
   width: 100% !important;
 }

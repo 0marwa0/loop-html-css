@@ -15,6 +15,9 @@
   text-align: left;
   color: #fff;
 }
+.location-content {
+  gap: 80px;
+}
 .location-section {
   background-image: url("./assets/images/loopLocation.png");
   width: 100%;
