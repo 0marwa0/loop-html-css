@@ -241,9 +241,9 @@
   color: #131825;
 
   border: solid 1px #eaeaea;
-  border-right: none;
+  /* border-right: none; */
   /* border-bottom: none; */
-  border-top: none;
+  /* border-top: none; */
   width: 100%;
 }
 .text-padding {
@@ -356,12 +356,12 @@
     padding: 5px;
   }
 
-  .booking-values section {
+  /* .booking-values section {
     border-left: none;
-  }
-  .book-btn {
+  } */
+  /* .book-btn {
     padding: 5px !important;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -384,7 +384,7 @@
     padding-top: 0.9rem;
   }
   .book-btn {
-    padding: 2px !important;
+    /* padding: 2px !important; */
     text-align: center !important;
     justify-content: center;
     align-items: center;
@@ -434,7 +434,7 @@
   grid-template-columns: 1fr auto;
   align-items: center;
 }
-.datepicker-input,
+/* .datepicker-input,
 .datepicker-input:focus {
   border: none !important;
   width: 100% !important;
@@ -442,7 +442,7 @@
   font-size: 20px !important;
 
   background-color: yellow;
-}
+} */
 
 .popup {
   position: fixed;
