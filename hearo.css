@@ -242,7 +242,7 @@
 
   border: solid 1px #eaeaea;
   border-right: none;
-  border-bottom: none;
+  /* border-bottom: none; */
   border-top: none;
   width: 100%;
 }

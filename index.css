@@ -6,7 +6,10 @@
   --dark-color: #131825;
   --grean: #38983c;
 }
-
+.dropdown-toggle {
+  background-color: transparent !important ;
+  border: none !important;
+}
 .dropdown-toggle:focus,
 .dropdown-toggle:active,
 .dropdown-item:active,
@@ -49,8 +52,9 @@ input[type="text"]:not(:disabled):not(.disabled) {
   font-family: Poppins;
   font-size: 20px;
   font-weight: 300;
-  line-height: 2.8;
+  line-height: 2;
   text-align: left;
+  margin: 0 !important;
   color: #131825;
   border: none !important;
 }
