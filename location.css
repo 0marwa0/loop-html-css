@@ -71,11 +71,11 @@
   }
 
   .primeLocation-move.down {
-    transform: translateY(-80px);
+    transform: translateY(-20px);
   }
 
   .primeLocation-move.up {
-    transform: translateY(80px);
+    transform: translateY(120px);
   }
 }
 @media screen and (max-width: 800px) {
