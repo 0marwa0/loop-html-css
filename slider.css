@@ -1,15 +1,11 @@
 .slide-item {
   width: 100%;
   height: 100%;
-  /* margin: 0 24px !important; */
 }
-.slider-section {
-  /* margin-top: 48px; */
-}
+
 .slider-btns {
   position: absolute;
   top: 0px;
-  /* gap: 20px; */
 }
 .slide-item img {
   width: 100%;

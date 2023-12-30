@@ -32,7 +32,6 @@
   padding: 0 !important;
 }
 .custom-theme {
-  /* Add your custom styles here */
   background-color: #e0e0e0;
 }
 .section-padding {
@@ -41,8 +40,8 @@
 /* Customize the active and selected day */
 #booking-date .is-today,
 #booking-date .is-selected {
-  background-color: #3498db; /* Active and selected day background color */
-  color: #fff; /* Active and selected day text color */
+  background-color: #3498db;
+  color: #fff;
 }
 input[type="text"]:focus,
 input[type="text"]:focus-visible,
@@ -59,14 +58,6 @@ input[type="text"]:not(:disabled):not(.disabled) {
   border: none !important;
 }
 
-.arrow-icon-lg {
-  /* width: 24px;
-    height: 24px; */
-  /* width: 24px;
-  
-    width: 24px; */
-  /* margin-right: 3px; */
-}
 .p-8 {
   padding: 8px 0;
 }
@@ -242,11 +233,9 @@ a {
 }
 #range::before {
   left: 0;
-  /* content: attr(data-min); */
 }
 #range::after {
   right: 0;
-  /* content: attr(data-max); */
 }
 
 #range::-webkit-slider-runnable-track {
@@ -260,11 +249,9 @@ a {
     #38983c var(--range-progress),
     #ddf0de var(--range-progress)
   );
-  /* border-radius: 1rem; */
 }
 #range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  /* box-shadow: 0 1px 3px rgba(0, 0, 255, 0.3); */
   border-radius: 50%;
   background: var(--grean);
   cursor: pointer;
