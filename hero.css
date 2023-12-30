@@ -121,7 +121,7 @@
   padding-top: 40px;
 }
 
-.hearo-booking {
+.hero-booking {
   margin-top: -135px;
   z-index: 1;
   width: auto !important;
@@ -139,7 +139,7 @@
   grid-template-columns: repeat(2, max-content) 1fr;
   background-color: var(--dark-color);
 }
-.hearo-text {
+.hero-text {
   width: 620px;
   height: 290px;
   line-height: 1.5;
@@ -155,7 +155,7 @@
 .gray-color {
   color: #131825;
 }
-.hearo-btn {
+.hero-btn {
   width: 331px;
   height: 64px;
   display: flex;
@@ -171,7 +171,7 @@
   color: #fff;
   transition: all 0.3s ease;
 }
-.hearo-btn:hover {
+.hero-btn:hover {
   background-color: #338d34;
   border-width: 2px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
@@ -259,7 +259,7 @@
   background-color: white;
 }
 
-.hearo-area {
+.hero-area {
   background-image: url("./assets/images/boat-intro.png");
   height: 729px;
   color: #fff;
@@ -284,7 +284,7 @@
   .book-now {
     padding: 20px;
   }
-  .hearo-area {
+  .hero-area {
     height: 100%;
   }
 
@@ -292,7 +292,7 @@
     height: auto;
     width: max-content !important;
   }
-  .hearo-booking {
+  .hero-booking {
     grid-template-columns: 1fr 1fr;
   }
   .date-price {
@@ -308,10 +308,10 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .hearo-area {
+  .hero-area {
     height: 700px;
   }
-  .hearo-booking {
+  .hero-booking {
     width: auto !important;
   }
   .book-btn {
@@ -331,7 +331,7 @@
   .span-2 {
     grid-column: unset;
   }
-  .hearo-text {
+  .hero-text {
     height: auto;
   }
   .booking-values {
@@ -343,15 +343,15 @@
   .book-loop-text-v2,
   .book-loop-title-v2,
   .book-loop-btn-btn,
-  .hearo-text {
+  .hero-text {
     width: 100%;
     height: auto;
   }
-  .hearo-btn {
+  .hero-btn {
     width: auto !important;
     padding: 10px !important;
   }
-  .hearo-text {
+  .hero-text {
     font-size: 2.5rem !important;
   }
   .book-loop-title-v2 {
@@ -362,7 +362,7 @@
     justify-content: center;
     align-items: center;
   }
-  .hearo-booking {
+  .hero-booking {
     margin-top: -10px;
     grid-template-columns: 1fr;
   }
@@ -371,7 +371,7 @@
   .date-price {
     width: auto !important;
   }
-  .hearo-booking {
+  .hero-booking {
     box-shadow: none;
     border: none;
   }
