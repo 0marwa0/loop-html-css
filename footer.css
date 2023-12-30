@@ -1,6 +1,7 @@
 .footer-icons {
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
   /* background-color: aquamarine; */
   flex-direction: row;
   width: max-content;
@@ -78,11 +79,16 @@
 #footer div {
   flex: 1;
 }
+@media screen and (max-width: 400px) {
+  .terms-policy {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 900px) {
   .footer-layout {
     grid-template-columns: 1fr;
     row-gap: 20px;
-    padding: 30px;
+
     place-items: center;
     /* justify-content: center;
     align-items: center;
