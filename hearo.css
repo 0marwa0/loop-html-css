@@ -129,12 +129,6 @@
   padding-top: 40px;
 }
 
-.reviews-btn {
-  width: 201px;
-  font-size: 18px !important;
-  padding: 16px 48px !important;
-  /* margin-top: 3.4rem; */
-}
 /* .css-z3c6am-MuiFormControl-root-MuiTextField-root {
     width: 97%;
   } */
@@ -326,7 +320,7 @@
   .hearo-area {
     height: 100%;
   }
-  .reviews-btn,
+
   .head-btn {
     /* font-size: 17px !important; */
     /* padding: 0.3rem !important; */

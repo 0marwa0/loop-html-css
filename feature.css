@@ -1,21 +1,14 @@
 .loop-features-text {
   width: 556px;
   height: 170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+
   font-family: Poppins;
-  font-size: 32px !important;
+  font-size: 32px;
   font-weight: 300;
-  line-height: 1.44 !important;
-  font-stretch: normal;
-  font-style: normal;
+  line-height: 1.44;
   letter-spacing: 1.6px !important;
   text-align: left;
   color: #fff;
-  /* border: 1px solid teal; */
-  /* margin-bottom: 40px !important; */
 }
 .container-layout {
   flex: 74%;
@@ -33,6 +26,7 @@
   font-family: Poppins;
   font-size: 27px;
   font-weight: normal;
+
   line-height: 1.8 !important;
   letter-spacing: 4px !important;
   margin-bottom: 20px;
@@ -98,10 +92,8 @@
 .features-container {
   display: flex;
   flex-direction: row;
-  /* gap: 10%; */
   gap: 50px;
   flex: 28%;
-  /* background-color: red; */
   width: 100%;
   height: auto;
   flex-wrap: wrap;
@@ -109,14 +101,11 @@
   align-items: start;
 }
 .feature-text {
-  /* width: 352px; */
-
-  /* width: max-content; */
   height: 128px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 300;
-  line-height: 2;
+  line-height: 1.44;
   text-align: left;
   color: #fff;
   flex-shrink: 1;
@@ -210,9 +199,12 @@
 }
 
 @media screen and (max-width: 800px) {
+  .container-layout {
+    flex: 100%;
+  }
   .loop-featuers {
     grid-template-rows: max-content auto;
-    place-items: end;
+    place-items: unset;
     height: 100%;
   }
 
@@ -230,19 +222,23 @@
   }
   .loop-features-title {
     /* font-size: 1.2rem; */
-    width: max-content;
+
     height: auto;
   }
 
   .loop-features-text {
     /* font-size: 0.9rem !important; */
-    width: 100%;
+    width: auto;
+
     margin-bottom: 60px;
     height: auto;
   }
 
   .loop-features-btn {
-    width: max-content !important;
+    height: auto;
+
+    padding: auto;
+    width: auto;
     /* height: auto !important; */
   }
 }

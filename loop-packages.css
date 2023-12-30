@@ -20,7 +20,6 @@
 .loop-packages-text {
   width: 616px;
   height: 138px;
-  flex-grow: 0;
   font-family: Poppins;
   font-size: 32px;
   font-weight: 300;
@@ -71,38 +70,21 @@
   grid-template-columns: 1fr;
   grid-template-rows: 99% auto;
   color: #fff;
-
-  /* padding: 20px; */
-  /* place-items: center; */
 }
-/* .empty-div {
-  height: 60%;
-} */
+
 .package-card {
   height: 424px;
-  /* object-fit: cover; */
   display: flex;
   flex-direction: column;
   justify-content: end;
   padding: 24px;
-  /* flex: 0 1 369px; */
-  /* flex: 0 1 calc(100% - 1em); */
-  /* width: 369px; */
-  /* width: 100%; */
   width: 32%;
   flex-shrink: 1;
-  /* box-sizing: border-box; */
-  /* border: 1px solid rebeccapurple; */
   background-size: cover;
   transition: transform 1.9998s ease-out;
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* @media screen and (max-width: 40em) {
-  .package-card {
-    flex: 0 1 calc(100% - 1em);
-  }
-} */
 
 .month-card {
   background-image: -webkit-image-set(
@@ -153,7 +135,6 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  /* background-color: aquamarine; */
 }
 .card-text {
   font-family: Poppins;
@@ -199,10 +180,6 @@
   .month-card-move.up {
     transform: translateY(40px);
   }
-  /* .month-card-move {
-    transition: transform 0.99s ease-out;
-  } */
-
   .month-card-move.down {
     transform: translateY(-70px);
   }
@@ -234,38 +211,27 @@
 }
 
 @media screen and (max-width: 800px) {
-  .loop-card-content {
-    /* grid-template-rows: max-content auto; */
-  }
-  /* .loop-packages-content {
-    top: 60%;
-  } */
-
   .loop-packages-text {
-    /* font-size: 1.2rem !important; */
     width: 100%;
     margin-bottom: 20px;
     padding: 0 10px;
     height: 100%;
   }
   .loop-packages-title {
-    /* font-size: 0.8rem !important; */
     width: 100%;
     margin-bottom: 10px;
     padding: 0 10px;
     height: auto;
   }
   .package-card {
-    /* padding: 20px; */
     width: max-content;
-    /* height: 424px; */
   }
 }
 
 @media screen and (max-width: 700px) {
   .loop-packages-btn {
     width: auto;
-    padding: 16px;
+    padding: auto;
   }
 }
 @media screen and (max-width: 1000px) {
