@@ -19,6 +19,16 @@
   gap: 60px;
 }
 .location-section {
+  background-image: -webkit-image-set(
+    url("./assets/images/loopLocation-1.png") 1x,
+    url("./assets/images/loopLocation@2.png") 2x,
+    url("./assets/images/loopLocation@3.png") 3x
+  );
+  background-image: image-set(
+    url("./assets/images/loopLocation-1.png") 1x,
+    url("./assets/images/loopLocation@2.png") 2x,
+    url("./assets/images/loopLocation@3.png") 3x
+  );
   background-image: url("./assets/images/loopLocation.png");
   width: 100%;
   height: 1103px;

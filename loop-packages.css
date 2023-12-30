@@ -1,5 +1,5 @@
 .loop-packages {
-  background-image: url("./assets/images/loop-packages.png");
+  background-image: url("./assets/images/loop-packages.svg");
   height: 800px;
   width: 100%;
   color: #fff;
@@ -89,7 +89,7 @@
   /* flex: 0 1 calc(100% - 1em); */
   /* width: 369px; */
   /* width: 100%; */
-  width: 30%;
+  width: 32%;
   flex-shrink: 1;
   /* box-sizing: border-box; */
   /* border: 1px solid rebeccapurple; */
@@ -105,13 +105,43 @@
 } */
 
 .month-card {
+  background-image: -webkit-image-set(
+    url("./assets/images/full-month-1.png") 1x,
+    url("./assets/images/full-month@2x.png") 2x,
+    url("./assets/images/full-month@3x.png") 3x
+  );
+  background-image: image-set(
+    url("./assets/images/full-month-1.png") 1x,
+    url("./assets/images/full-month@2x.png") 2x,
+    url("./assets/images/full-month@3x.png") 3x
+  );
   background-image: url("./assets/images/full-month.png");
 }
 .day-card-move {
-  background-image: url("./assets/images/full-day.png");
+  background-image: -webkit-image-set(
+    url("./assets/images/full-day-1.png") 1x,
+    url("./assets/images/full-day@2x.png") 2x,
+    url("./assets/images/full-day@3x.png") 3x
+  );
+  background-image: image-set(
+    url("./assets/images/full-day-1.png") 1x,
+    url("./assets/images/full-day@2x.png") 2x,
+    url("./assets/images/full-day@3x.png") 3x
+  );
+  background-image: url("./assets/images/full-day@3x.png");
 }
 .week-card-move {
-  background-image: url("./assets/images/full-week.png");
+  background-image: -webkit-image-set(
+    url("./assets/images/full-week-1.png") 1x,
+    url("./assets/images/full-week@2x.png") 2x,
+    url("./assets/images/full-week@3x.png") 3x
+  );
+  background-image: image-set(
+    url("./assets/images/full-week-1.png") 1x,
+    url("./assets/images/full-week@2x.png") 2x,
+    url("./assets/images/full-week@3x.png") 3x
+  );
+  background-image: url("./assets/images/full-week@3x.png");
 }
 
 /* card  */
@@ -120,7 +150,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   /* background-color: aquamarine; */
