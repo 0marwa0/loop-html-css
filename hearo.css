@@ -2,12 +2,41 @@
   --dark-color: #131825;
   --grean: #38983c;
 }
+
+/* Custom style for active day */
+.flatpickr-calendar .flatpickr-day.today {
+  background-color: var(--grean) !important;
+  color: white !important ;
+  border: none !important;
+}
+
+/* Custom style for selected day */
+.flatpickr-calendar .flatpickr-day.selected {
+  background-color: var(--grean) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+/* Custom style for the dropdown button */
+.flatpickr-calendar .flatpickr-monthDropdown-months,
+.flatpickr-calendar .flatpickr-yearDropdown-years {
+  background-color: white !important;
+  box-shadow: none !important;
+  border: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+  box-shadow: none;
+}
+
 /** raido input  style start **/
 
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
   position: absolute;
   left: -9999px;
+  transition: all 9s ease-in-out;
 }
 [type="radio"]:checked + label,
 [type="radio"]:not(:checked) + label {
@@ -29,6 +58,7 @@
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
   content: "";
+
   position: absolute;
   left: 0;
   top: 4px;
@@ -48,7 +78,7 @@
   top: 13px;
   left: 9px;
   border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.2s ease;
 }
 [type="radio"]:not(:checked) + label:after {
@@ -129,6 +159,7 @@
   /* height: 93px; */
   /* height: 100%; */
   column-gap: 48px;
+
   grid-template-columns: repeat(2, max-content) 1fr;
   background-color: var(--dark-color);
 }

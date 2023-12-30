@@ -45,7 +45,7 @@
   letter-spacing: 0.8px !important;
   text-align: center !important;
   line-height: 2;
-
+  background-color: transparent;
   color: #fff;
   padding: 19px !important;
   border: 1px solid white !important;
@@ -107,9 +107,9 @@
     transition: transform 1.9998s ease-out;
   }
 
-  #explore-boats-section-move.down.explore-boat {
+  /* #explore-boats-section-move.down.explore-boat {
     margin-top: 200px;
-  }
+  } */
   #explore-boats-section-move.down {
     transform: scale(1.1);
   }
