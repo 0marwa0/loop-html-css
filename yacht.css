@@ -41,7 +41,17 @@
 }
 .princessYacht-container {
   padding-top: 98px;
-  background-image: url("./assets/images/princessYacht-bg.svg");
+  background-image: -webkit-image-set(
+    url("./assets/images/princessYacht-bg.png") 1x,
+    url("./assets/images/princessYacht-bg@2x.png") 2x,
+    url("./assets/images/princessYacht-bg@3x.png") 3x
+  );
+  background-image: image-set(
+    url("./assets/images/princessYacht-bg.png") 1x,
+    url("./assets/images/princessYacht-bg@2x.png") 2x,
+    url("./assets/images/princessYacht-bg@3x.png") 3x
+  );
+  background-image: url("./assets/images/princessYacht-bg@3x.png");
   height: 591px;
   width: 100%;
   color: #fff;

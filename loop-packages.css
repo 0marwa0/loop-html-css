@@ -173,18 +173,16 @@
   }
 
   .week-card-move.down {
-    transform: translateY(-50px);
+    transform: translateY(-40px);
   }
-
-  .month-card-move.up {
-    transform: translateY(40px);
-  }
-  .month-card-move.down {
-    transform: translateY(-70px);
-  }
-
   .week-card-move.up {
     transform: translateY(40px);
+  }
+  .month-card-move.up {
+    transform: translateY(60px);
+  }
+  .month-card-move.down {
+    transform: translateY(-60px);
   }
 }
 @media screen and (max-width: 1200px) {
