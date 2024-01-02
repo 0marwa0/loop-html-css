@@ -4,10 +4,11 @@
 }
 .section-title {
   width: 414px;
-  height: 36px;
+
   flex-grow: 0;
+
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 32px;
   text-transform: capitalize !important;
   line-height: 1.8;
   letter-spacing: 4px;

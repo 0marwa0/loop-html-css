@@ -108,7 +108,8 @@ a {
 }
 .section-text {
   color: var(--dark-color);
-  width: 584px;
+  width: 564px;
+
   height: 138px;
   padding-top: 60px 0;
   font-family: Poppins;

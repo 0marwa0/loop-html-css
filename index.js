@@ -316,6 +316,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const card4_move = document.getElementById("card4-move");
   const card5_move = document.getElementById("card5-move");
 
+  const card1_testimonial_move = document.getElementById(
+    "card1-testimonial-move"
+  );
+  const card2_testimonial_move = document.getElementById(
+    "card2-testimonial-move"
+  );
+  const card3_testimonial_move = document.getElementById(
+    "card3-testimonial-move"
+  );
+  const card4_testimonial_move = document.getElementById(
+    "card4-testimonial-move"
+  );
+  const card5_testimonial_move = document.getElementById(
+    "card5-testimonial-move"
+  );
+
   let scrollDirection = "up";
   let scrollPosition = 0;
 
@@ -345,6 +361,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     card5_move.classList.remove("up", "down");
     card5_move.classList.add(scrollDirection);
+
+    card1_testimonial_move.classList.remove("up", "down");
+    card1_testimonial_move.classList.add(scrollDirection);
+
+    card2_testimonial_move.classList.remove("up", "down");
+    card2_testimonial_move.classList.add(scrollDirection);
+
+    card3_testimonial_move.classList.remove("up", "down");
+    card3_testimonial_move.classList.add(scrollDirection);
+
+    card4_testimonial_move.classList.remove("up", "down");
+    card4_testimonial_move.classList.add(scrollDirection);
+
+    card5_testimonial_move.classList.remove("up", "down");
+    card5_testimonial_move.classList.add(scrollDirection);
   }
 
   window.addEventListener("scroll", handleScroll);

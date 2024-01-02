@@ -149,39 +149,39 @@
     transition: transform 1.9998s ease-out;
   }
 
-  .card1-move.down {
+  #card1-testimonial-move.down {
     transform: translateY(-50px);
   }
 
-  .card1-move.up {
+  #card1-testimonial-move.up {
     transform: translateY(50px);
   }
-  .card2-move.down {
+  #card2-testimonial-move.down {
     transform: translateY(-40px);
   }
 
-  .card2-move.up {
+  #card2-testimonial-move.up {
     transform: translateY(40px);
   }
-  .card3-move.down {
+  #card3-testimonial-move.down {
     transform: translateY(-30px);
   }
 
-  .card3-move.up {
+  #card3-testimonial-move.up {
     transform: translateY(30px);
   }
-  .card4-move.down {
+  #card4-testimonial-move.down {
     transform: translateY(-20px);
   }
 
-  .card4-move.up {
+  #card4-testimonial-move.up {
     transform: translateY(20px);
   }
-  .card5-move.down {
+  #card5-testimonial-move.down {
     transform: translateY(-10px);
   }
 
-  .card5-move.up {
+  #card5-testimonial-move.up {
     transform: translateY(10px);
   }
 }
