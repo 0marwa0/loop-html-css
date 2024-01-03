@@ -88,12 +88,12 @@
 
 .month-card {
   background-image: -webkit-image-set(
-    url("./assets/images/full-month-1.png") 1x,
+    url("./assets/images/full-month@1x.png") 1x,
     url("./assets/images/full-month@2x.png") 2x,
     url("./assets/images/full-month@3x.png") 3x
   );
   background-image: image-set(
-    url("./assets/images/full-month-1.png") 1x,
+    url("./assets/images/full-month@1x.png") 1x,
     url("./assets/images/full-month@2x.png") 2x,
     url("./assets/images/full-month@3x.png") 3x
   );
@@ -101,12 +101,12 @@
 }
 .day-card-move {
   background-image: -webkit-image-set(
-    url("./assets/images/full-day-1.png") 1x,
+    url("./assets/images/full-day@1x.png") 1x,
     url("./assets/images/full-day@2x.png") 2x,
     url("./assets/images/full-day@3x.png") 3x
   );
   background-image: image-set(
-    url("./assets/images/full-day-1.png") 1x,
+    url("./assets/images/full-day@1x.png") 1x,
     url("./assets/images/full-day@2x.png") 2x,
     url("./assets/images/full-day@3x.png") 3x
   );
@@ -114,12 +114,12 @@
 }
 .week-card-move {
   background-image: -webkit-image-set(
-    url("./assets/images/full-week-1.png") 1x,
+    url("./assets/images/full-week@1x.png") 1x,
     url("./assets/images/full-week@2x.png") 2x,
     url("./assets/images/full-week@3x.png") 3x
   );
   background-image: image-set(
-    url("./assets/images/full-week-1.png") 1x,
+    url("./assets/images/full-week@1x.png") 1x,
     url("./assets/images/full-week@2x.png") 2x,
     url("./assets/images/full-week@3x.png") 3x
   );
