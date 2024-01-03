@@ -138,7 +138,7 @@
   padding: 24px 176px 21px 24px;
   display: grid;
   column-gap: 48px;
-  grid-template-columns: repeat(2, max-content) 1fr;
+  grid-template-columns: repeat(3, max-content);
   background-color: var(--dark-color);
 }
 .hero-text {
@@ -298,13 +298,14 @@
     grid-template-columns: 1fr 1fr;
   }
   .date-price {
-    margin-bottom: 8px;
+    /* background-color: rebeccapurple; */
+    /* margin: 0px; */
+    width: auto;
+    /* margin-bottom: 8px;*/
+    margin: 10px 0;
   }
 
   .booking-values {
-    grid-template-columns: auto;
-  }
-  .booking-head {
     grid-template-columns: auto;
   }
 }
@@ -329,28 +330,36 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .span-2 {
     grid-column: unset;
   }
-  .hero-text {
-    height: auto;
-  }
+  /* .hero-text {
+    height: 100%;
+  } */
   .booking-values {
     padding: 5px;
   }
+  .booking-head {
+    grid-template-columns: auto;
+  }
 }
-
+@media screen and (max-width: 420px) {
+  .hero-text {
+    height: auto;
+  }
+}
 @media screen and (max-width: 600px) {
   .book-loop-text-v2,
   .book-loop-title-v2,
   .book-loop-btn-btn,
   .hero-text {
     width: 100%;
-    height: auto;
+    /* height: auto; */
   }
   .hero-btn {
     width: auto !important;
+    /* height: 100%; */
     padding: 10px !important;
   }
   .hero-text {
@@ -365,7 +374,6 @@
     align-items: center;
   }
   .hero-booking {
-    margin-top: -10px;
     grid-template-columns: 1fr;
   }
 }
@@ -376,10 +384,14 @@
   .hero-booking {
     box-shadow: none;
     border: none;
+    margin-top: -10px;
   }
 
   .book-btn {
     flex-direction: column;
+  }
+  .datepicker-container img {
+    display: none;
   }
 }
 
