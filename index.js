@@ -1,46 +1,47 @@
-const range = document.getElementById("range"),
-  passenger_value = document.getElementById("passenger-value"),
-  tooltip = document.getElementById("tooltip"),
-  setValue = () => {
-    const newValue = Number(
-      ((range.value - range.min) * 100) / (range.max - range.min)
-    );
-    const newPosition = 16 - newValue * 0.32;
-    tooltip.innerHTML = `<span>${range.value} Passenger </span>`;
-    passenger_value.textContent = range.value;
-    tooltip.style.left = `calc(${newValue}% + (${newPosition}px))`;
-    document.documentElement.style.setProperty(
-      "--range-progress",
-      `calc(${newValue}% + (${newPosition}px))`
-    );
-  };
-document.addEventListener("DOMContentLoaded", () => {
-  setValue();
-  range.dispatchEvent(new Event("input"));
-});
-
-range.addEventListener("input", setValue);
-function styleFirstAndLastVisibleItems(splideInstance) {
-  // Remove the previous styles
-  splideInstance.getElements(".splide__slide").forEach(function (slide) {
-    slide.classList.remove("first-visible", "last-visible");
-  });
-
-  // Get the visible slides
-  var visibleSlides =
-    splideInstance.Components.Elements.slides.filter(":visible");
-
-  // Add classes to the first and last visible slides
-  if (visibleSlides.length > 0) {
-    visibleSlides[0].classList.add("first-visible");
-    visibleSlides[visibleSlides.length - 1].classList.add("last-visible");
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", function () {
   flatpickr("#exampleDate", {
     dateFormat: "d F Y",
+    disableMobile: "true",
   });
+
+  const range = document.getElementById("range"),
+    passenger_value = document.getElementById("passenger-value"),
+    tooltip = document.getElementById("tooltip"),
+    setValue = () => {
+      const newValue = Number(
+        ((range.value - range.min) * 100) / (range.max - range.min)
+      );
+      const newPosition = 16 - newValue * 0.32;
+      tooltip.innerHTML = `<span>${range.value} Passenger </span>`;
+      passenger_value.textContent = range.value;
+      tooltip.style.left = `calc(${newValue}% + (${newPosition}px))`;
+      document.documentElement.style.setProperty(
+        "--range-progress",
+        `calc(${newValue}% + (${newPosition}px))`
+      );
+    };
+  document.addEventListener("DOMContentLoaded", () => {
+    setValue();
+    range.dispatchEvent(new Event("input"));
+  });
+
+  range.addEventListener("input", setValue);
+  function styleFirstAndLastVisibleItems(splideInstance) {
+    // Remove the previous styles
+    splideInstance.getElements(".splide__slide").forEach(function (slide) {
+      slide.classList.remove("first-visible", "last-visible");
+    });
+
+    // Get the visible slides
+    var visibleSlides =
+      splideInstance.Components.Elements.slides.filter(":visible");
+
+    // Add classes to the first and last visible slides
+    if (visibleSlides.length > 0) {
+      visibleSlides[0].classList.add("first-visible");
+      visibleSlides[visibleSlides.length - 1].classList.add("last-visible");
+    }
+  }
 
   range.addEventListener("input", setValue);
   var splide_testimonials = new Splide("#splide_testimonials", {
