@@ -29,28 +29,28 @@
   box-shadow: none;
 }
 
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
+.radio-container [type="radio"]:checked,
+.radio-container [type="radio"]:not(:checked) {
   position: absolute;
   left: -9999px;
   transition: all 9s ease-in-out;
 }
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label {
+.radio-container [type="radio"]:checked + label,
+.radio-container [type="radio"]:not(:checked) + label {
   position: relative;
   padding-left: 40px;
   width: 205px;
   font-family: Poppins;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 500;
-
+  width: max-content;
   letter-spacing: 0.9px;
   text-align: left;
   color: #fff;
   cursor: pointer;
 }
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
+.radio-container [type="radio"]:checked + label:before,
+.radio-container [type="radio"]:not(:checked) + label:before {
   content: "";
 
   position: absolute;
@@ -62,8 +62,8 @@
   border-radius: 100%;
   background: transparent;
 }
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
+.radio-container [type="radio"]:checked + label:after,
+.radio-container [type="radio"]:not(:checked) + label:after {
   content: "";
   width: 9px;
   height: 9px;
@@ -75,27 +75,33 @@
   -webkit-transition: all 0.3s ease;
   transition: all 0.2s ease;
 }
-[type="radio"]:not(:checked) + label:after {
+.radio-container [type="radio"]:not(:checked) + label:after {
   display: none;
 
   /* -webkit-transform: scale(0);
   transform: scale(0); */
 }
 
-[type="radio"]:checked + label:after {
+.radio-container [type="radio"]:checked + label:after {
   opacity: 1;
   /* -webkit-transform: scale(1);
   transform: scale(1); */
 }
-[type="radio"]:checked + label::before {
+.section-padding {
+  padding: 24px 23px 22px 24px;
+}
+.radio-container [type="radio"]:checked + label::before {
   border: 2px solid var(--grean);
 }
 .no-border {
   border: none !important;
 }
+.date-text {
+  text-align: left;
+}
 .date-price {
   height: auto;
-  width: 100%;
+
   margin-left: 40px;
   font-family: Poppins !important;
   font-size: 16px;
@@ -132,7 +138,7 @@
   width: auto !important;
   height: max-content;
   box-shadow: 0 24px 52px -14px rgba(29, 41, 57, 0.16);
-  border: solid 16px rgba(255, 255, 255, 0.06);
+  border: solid 0.7rem rgba(255, 255, 255, 0.06);
   background-color: transparent;
   transform: scale(1.02);
   grid-template-rows: auto auto;
@@ -146,13 +152,15 @@
 }
 .hero-text {
   width: 620px;
-  height: 290px;
+  /* height: 290px; */
+  height: auto;
   line-height: 1.5;
   letter-spacing: 2.4px;
   font-weight: 300;
   font-size: 48px;
   display: flex;
   margin-top: 100px;
+  margin-bottom: 3%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -271,6 +279,8 @@
 .hero-area {
   background-image: url("./assets/images/boat-intro.png");
   height: 729px;
+  /* height: 100%; */
+  min-height: 400px;
   color: #fff;
   background-size: cover;
   background-color: #131825;
@@ -280,15 +290,7 @@
 .m-t-2 {
   margin-top: 2px;
 }
-.date-text {
-  font-family: Poppins !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  line-height: 2;
-  text-align: left;
 
-  color: #131825;
-}
 @media screen and (max-width: 1040px) {
   .book-now {
     padding: 20px;
@@ -360,24 +362,23 @@
   .book-loop-btn-btn,
   .hero-text {
     width: 100%;
-    /* height: auto; */
+  }
+  .hero-booking {
+    box-shadow: none;
+    border: none;
+
+    transform: scale(1);
   }
   .hero-btn {
     width: auto !important;
-    /* height: 100%; */
+    height: auto;
     padding: 10px !important;
   }
-  .hero-text {
-    font-size: 2.5rem !important;
-  }
+
   .book-loop-title-v2 {
     padding-top: 0.9rem;
   }
-  /* .book-btn {
-    text-align: center !important;
-    justify-content: center;
-    align-items: center;
-  } */
+
   .hero-booking {
     grid-template-columns: 1fr;
   }
@@ -392,18 +393,12 @@
   }
 }
 @media screen and (max-width: 300px) {
-  .date-price {
-    width: auto !important;
-  }
   .hero-booking {
     box-shadow: none;
     border: none;
     margin-top: -10px;
   }
 
-  /* .book-btn {
-    flex-direction: column;
-  } */
   .datepicker-container img {
     display: none;
   }
@@ -497,4 +492,49 @@
 }
 .dropdown-toggle::after {
   display: none !important;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 36px;
+  }
+  .text-value,
+  .book-btn,
+  .datepicker-container input[type="text"]:focus,
+  .datepicker-container input[type="text"]:focus-visible,
+  .datepicker-container input[type="text"]:not(:disabled):not(.disabled) {
+    font-size: 16px !important;
+  }
+
+  .hero-area {
+    height: 629px;
+  }
+}
+/* Mobile styles */
+@media (max-width: 480px) {
+  .hero-area {
+    height: 529px;
+  }
+  .section-padding {
+    padding: 10px !important;
+  }
+  .booking-values section {
+    height: 90px;
+  }
+  .text-value,
+  .book-btn,
+  .datepicker-container input[type="text"]:focus,
+  .datepicker-container input[type="text"]:focus-visible,
+  .datepicker-container input[type="text"]:not(:disabled):not(.disabled) {
+    font-size: 14px !important;
+  }
+  .date-price {
+    width: auto !important;
+    height: auto;
+  }
+
+  .hero-text {
+    font-size: 24px;
+  }
 }

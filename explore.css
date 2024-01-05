@@ -76,7 +76,7 @@
     height: 900px;
   }
   .book-loop-title {
-    padding-top: 10px;
+    padding-top: 30px;
     /* font-size: 22px; */
   }
 }
@@ -97,9 +97,9 @@
   .book-loop-btn {
     background-color: rgba(30, 29, 29, 0.454) !important;
   }
-  .book-loop-title-v2 {
+  /* .book-loop-title-v2 {
     padding-top: 0.9rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 1000px) {
@@ -116,5 +116,36 @@
 
   #explore-boats-section-move.up {
     transform: scale(1);
+  }
+}
+/* Tablet styles */
+@media (max-width: 768px) {
+  .book-loop-text {
+    font-size: 24px;
+    background-color: #131825d5;
+  }
+  .book-loop-title {
+    font-size: 16px;
+    line-height: normal;
+    height: auto;
+  }
+  .explore-boat {
+    height: 629px;
+  }
+}
+/* Mobile styles */
+@media (max-width: 480px) {
+  .explore-boat {
+    height: 529px;
+  }
+  .book-loop-title {
+    height: auto;
+
+    font-size: 14px;
+    line-height: normal;
+  }
+  .book-loop-text {
+    background-color: #131825d5;
+    font-size: 18px;
   }
 }

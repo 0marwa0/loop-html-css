@@ -187,3 +187,29 @@
     transform: translateY(10px);
   }
 }
+/* Tablet styles */
+@media (max-width: 768px) {
+  .testimonals {
+    font-size: 16px;
+    line-height: normal;
+    height: auto;
+  }
+  .testimonal-head {
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 5px;
+  }
+}
+/* Mobile styles */
+@media (max-width: 480px) {
+  .testimonal-head {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .testimonals {
+    height: auto;
+
+    font-size: 14px;
+    line-height: normal;
+  }
+}

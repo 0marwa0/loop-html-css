@@ -66,3 +66,9 @@
   cursor: pointer;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .splide__track {
+    padding-top: 18px;
+    padding-bottom: 28px;
+  }
+}

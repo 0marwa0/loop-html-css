@@ -11,10 +11,6 @@
   height: auto;
 }
 .commitment-section {
-  /* background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url("./assets/images/commitment-area.svg"); */
   width: 100%;
   height: 474px;
   display: grid;
@@ -26,7 +22,7 @@
 .compass-container {
   height: 300px;
   width: 190px;
-  /* background-color: #38983c; */
+
   position: relative;
 }
 .compass {
@@ -50,7 +46,7 @@
   height: 36px;
   flex-grow: 0;
   font-family: Poppins !important;
-  font-size: 20px !important;
+  font-size: 20px;
   line-height: 1.8;
   letter-spacing: 4px;
   text-align: left;
@@ -103,7 +99,6 @@
 }
 .commitment-container {
   width: 584px;
-
   gap: 50px;
   display: flex;
   justify-content: center;
@@ -124,13 +119,13 @@
   }
   .commitment-container {
     /* font-size: 1rem !important; */
-    padding: 20px !important;
+    /* padding: 20px !important; */
   }
   .commitment-title {
     width: auto;
     margin: 5px 0;
-    line-height: 1.44;
-    letter-spacing: 1.6px;
+    /* line-height: 1.44;
+    letter-spacing: 1.6px; */
   }
 }
 
@@ -188,4 +183,30 @@ input {
 .ui-slider-handle {
   outline: none;
   cursor: all-scroll;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .commitment-title {
+    font-size: 16px;
+    line-height: normal;
+    height: auto;
+  }
+  .commitment-container {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+/* Mobile styles */
+@media (max-width: 480px) {
+  .commitment-container {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .commitment-title {
+    height: auto;
+
+    font-size: 14px;
+    line-height: normal;
+  }
 }

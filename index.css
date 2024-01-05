@@ -10,6 +10,9 @@
   background-color: transparent !important ;
   border: none !important;
 }
+.radio-container {
+  color: #fff;
+}
 .dropdown-toggle:focus,
 .dropdown-toggle:active,
 .dropdown-item:active,
@@ -34,18 +37,16 @@
 .custom-theme {
   background-color: #e0e0e0;
 }
-.section-padding {
-  padding: 24px 23px 22px 24px;
-}
+
 /* Customize the active and selected day */
 #booking-date .is-today,
 #booking-date .is-selected {
   background-color: #3498db;
   color: #fff;
 }
-input[type="text"]:focus,
-input[type="text"]:focus-visible,
-input[type="text"]:not(:disabled):not(.disabled) {
+.datepicker-container input[type="text"]:focus,
+.datepicker-container input[type="text"]:focus-visible,
+.datepicker-container input[type="text"]:not(:disabled):not(.disabled) {
   box-shadow: none;
   outline: none !important;
   font-family: Poppins;
@@ -142,14 +143,6 @@ a {
 @media screen and (max-width: 800px) {
   .container-layout {
     padding: 0 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .section-text {
-    font-size: 1.8rem !important;
-    width: 100%;
-
-    height: auto;
   }
 }
 

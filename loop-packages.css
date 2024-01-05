@@ -243,3 +243,30 @@
     flex: 0 1 100%;
   }
 }
+/* Tablet styles */
+@media (max-width: 768px) {
+  .loop-packages-title {
+    font-size: 16px;
+    line-height: normal;
+    height: auto;
+  }
+  .loop-packages-text,
+  .card-title {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+/* Mobile styles */
+@media (max-width: 480px) {
+  .loop-packages-text,
+  .card-title {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .loop-packages-title {
+    height: auto;
+
+    font-size: 14px;
+    line-height: normal;
+  }
+}

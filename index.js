@@ -1,28 +1,27 @@
+const range = document.getElementById("range"),
+  passenger_value = document.getElementById("passenger-value"),
+  tooltip = document.getElementById("tooltip"),
+  setValue = () => {
+    const newValue = Number(
+      ((range.value - range.min) * 100) / (range.max - range.min)
+    );
+    const newPosition = 16 - newValue * 0.32;
+    tooltip.innerHTML = `<span>${range.value} Passenger </span>`;
+    passenger_value.textContent = range.value;
+    tooltip.style.left = `calc(${newValue}% + (${newPosition}px))`;
+    document.documentElement.style.setProperty(
+      "--range-progress",
+      `calc(${newValue}% + (${newPosition}px))`
+    );
+  };
+document.addEventListener("DOMContentLoaded", () => {
+  setValue();
+  range.dispatchEvent(new Event("input"));
+});
 window.addEventListener("DOMContentLoaded", function () {
   flatpickr("#exampleDate", {
     dateFormat: "d F Y",
     disableMobile: "true",
-  });
-
-  const range = document.getElementById("range"),
-    passenger_value = document.getElementById("passenger-value"),
-    tooltip = document.getElementById("tooltip"),
-    setValue = () => {
-      const newValue = Number(
-        ((range.value - range.min) * 100) / (range.max - range.min)
-      );
-      const newPosition = 16 - newValue * 0.32;
-      tooltip.innerHTML = `<span>${range.value} Passenger </span>`;
-      passenger_value.textContent = range.value;
-      tooltip.style.left = `calc(${newValue}% + (${newPosition}px))`;
-      document.documentElement.style.setProperty(
-        "--range-progress",
-        `calc(${newValue}% + (${newPosition}px))`
-      );
-    };
-  document.addEventListener("DOMContentLoaded", () => {
-    setValue();
-    range.dispatchEvent(new Event("input"));
   });
 
   range.addEventListener("input", setValue);
