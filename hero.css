@@ -128,8 +128,12 @@
   text-align: left;
   color: #131825;
 }
-.navbar-v2 {
-  padding-top: 40px;
+.padding-40 {
+}
+.navbar {
+  display: flex;
+  padding-top: 44px !important;
+  justify-content: space-around;
 }
 
 .hero-booking {
@@ -295,9 +299,9 @@
   .book-now {
     padding: 20px;
   }
-  .hero-area {
+  /* .hero-area {
     height: 100%;
-  }
+  } */
 
   /* .head-btn {
     height: auto;
@@ -403,7 +407,12 @@
     display: none;
   }
 }
-
+@media screen and (max-width: 255px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .css-1e68d75-MuiInputBase-root-MuiInput-root {
   color: #131825;
 
@@ -511,10 +520,12 @@
     height: 629px;
   }
 }
+
 /* Mobile styles */
 @media (max-width: 480px) {
   .hero-area {
-    height: 529px;
+    /* height: 529px; */
+    /* height: auto; */
   }
   .section-padding {
     padding: 10px !important;
